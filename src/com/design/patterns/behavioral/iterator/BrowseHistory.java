@@ -10,17 +10,6 @@ public class BrowseHistory {
         urls.add(url);
     }
 
-    public String pop() {
-        var lastIndex = urls.size() - 1;
-        String lastItem = urls.get(lastIndex);
-        urls.remove(lastIndex);
-        return lastItem;
-    }
-
-    public List<String> getUrls() {
-        return urls;
-    }
-
     public Iterator createIterator() {
         return new ListIterator(this);
     }

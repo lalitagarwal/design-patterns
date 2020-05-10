@@ -11,8 +11,8 @@ public class UndoCommandMain {
         System.out.println(document.getContent());
 
         // 1st Way
-//        boldCommand.unexecute();
-//        System.out.println(document.getContent());
+        // boldCommand.unexecute();
+        // System.out.println(document.getContent());
 
         // 2nd Way
         var undoCommand = new CommandUndo(history);

@@ -1,4 +1,6 @@
-package com.design.patterns.behavioral.command.framework;
+package com.design.patterns.behavioral.command;
+
+import com.design.patterns.behavioral.command.framework.Command;
 
 public class Button {
     private String label;
@@ -11,13 +13,5 @@ public class Button {
 
     public void click() {
         command.execute();
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
     }
 }
